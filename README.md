@@ -92,54 +92,56 @@ Todos os treinamentos foram realizados na NVIDIA A100.
 ## 4.Resultados
 
 <summary>YOLOv8-n</summary>
-
+<div align='center'>
+      
 |precision_mean|box_loss_mean|cls_loss_mean|
 |------------|-------------|-------------|
-|78.36%|60.79|204.12|
+|91.59%|0.69|0.91|
 
-<details open>
-|      
+![alt text](https://raw.githubusercontent.com/MateusuMelo/YOLO8-Version-Tumor/dd487df16de467a0a15947e98a8798a5990bdb8f/results_img/Yolov8-N/results.png)
+
+</div>
+
+<summary>YOLOv8-s</summary>
+<div align='center'>
       
-</details>
-```
-git clone https://github.com/Li-Hongda/TensorRT_Inference_Demo.git
-```
-2. Install the dependencies.
-### TensorRT
-Following [NVIDIA offical docs](https://docs.nvidia.com/deeplearning/tensorrt/install-guide/index.html#installing) to install TensorRT.
+|precision_mean|box_loss_mean|cls_loss_mean|
+|------------|-------------|-------------|
+|64.63%|0.85|1.11|
 
-### yaml-cpp
-```
-git clone https://github.com/jbeder/yaml-cpp
-mkdir build && cd build
-cmake ..
-make -j20
-cmake -DYAML_BUILD_SHARED_LIBS=on ..
-make -j20
-cd ..
-```
+![alt text](https://raw.githubusercontent.com/MateusuMelo/YOLO8-Version-Tumor/dd487df16de467a0a15947e98a8798a5990bdb8f/results_img/Yolov8-S/results.png)
 
+</div>
 
-3. Change the path [here](https://github.com/Li-Hongda/TensorRT_Inference_Demo/blob/main/object_detection/CMakeLists.txt#L19) to your TensorRT path, and [here](https://github.com/Li-Hongda/TensorRT_Inference_Demo/blob/main/object_detection/CMakeLists.txt#L11) to your CUDA path. Then,
-```
-cd TensorRT_Inference_Demo/object_detection
-mkdir build && cd build
-cmake ..
-make -j$(nproc)
-```
-4. Get the ONNX model from the official repository and put them in `weights/MODEL_NAME`. Then modify the configuration file in `configs`.Take yolov5 as an example:
-```
-python export.py --weights=yolov5s.pt  --dynamic --simplify --include=onnx --opset 11
-```
-5. The executable file will be generated in `bin` in the repo directory if compile successfully.Then enjoy yourself with command like this:
-```
-cd bin
-./object_detection yolov5 /path/to/input/dir 
-```
+<summary>YOLOv8-m</summary>
+<div align='center'>
+      
+|precision_mean|box_loss_mean|cls_loss_mean|
+|------------|-------------|-------------|
+|91.31%|0.71|0.74|
 
-> Notes:
-> 1. The output of the model is required for post-processing is num_bboxes (imageHeight x imageWidth) x num_pred(num_cls + coordinates + confidence),while the output of YOLOv8 is num_pred x num_bboxes,which means the predicted values of the same box are not contiguous in memory.For convenience, the corresponding dimensions of the original pytorch output need to be transposed when exporting to ONNX model.
-> 2. The dynamic shape engine is convenient but sacrifices some inference speed compared with the static model of the same batchsize.Therefore, if you want to pursue faster inference speed, it is better to export the ONNX model of fixed batchsize, such as batchsize 32.
+![alt text](https://raw.githubusercontent.com/MateusuMelo/YOLO8-Version-Tumor/dd487df16de467a0a15947e98a8798a5990bdb8f/results_img/Yolov8-M/results.png)
 
+</div>
 
+<summary>YOLOv8-l</summary>
+<div align='center'>
+      
+|precision_mean|box_loss_mean|cls_loss_mean|
+|------------|-------------|-------------|
+|91.58%|0.73|0.99|
 
+![alt text](https://raw.githubusercontent.com/MateusuMelo/YOLO8-Version-Tumor/dd487df16de467a0a15947e98a8798a5990bdb8f/results_img/Yolov8-L/results.png)
+
+</div>
+
+<summary>YOLOv8-x</summary>
+<div align='center'>
+      
+|precision_mean|box_loss_mean|cls_loss_mean|
+|------------|-------------|-------------|
+|0.94%|0.69|0.66|
+
+![alt text](https://raw.githubusercontent.com/MateusuMelo/YOLO8-Version-Tumor/dd487df16de467a0a15947e98a8798a5990bdb8f/results_img/Yolov8-X/results.png)
+
+</div>
