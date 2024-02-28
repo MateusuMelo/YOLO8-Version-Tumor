@@ -2,15 +2,15 @@
 
 ## 1.Dataset
 O dataset usado : [Roboflow - BrainTumor](https://universe.roboflow.com/csilab/csilab-braintumor-detection).<br>
-A separcão de dados :
+A separação de dados :
 |Train|Test|Valid|
 |-----|----|-----|
 |211|60|30|
-
+|70%|20%|10%|
 
 
 ## 2.Modelos e parametros
-<details open>
+
 <summary>modelos usados (retirado da documentacao do Yolov8)</summary>
 <div align = 'center'>
       <table>
@@ -74,25 +74,33 @@ A separcão de dados :
     </tbody>
     </table>
 </div>
-</details>
+
 
 Todos os treinamentos foram realizados na NVIDIA A100.
 <div align='center'>
 
-| Models | BatchSize | Mode | Resolution |  FPS  |
-|-|-|:-:|:-:|:-:|
-| YOLOv8-n  | 1 | FP32 | 640x640 | 200 |
-| YOLOv8-s  | 32 | FP32 | 640x640 | 246 |
-| YOLOv8-m  | 1 | FP32 | 640x640 | 155 |
-| YOLOv8-l  | 1 | FP32 | 640x640 | 163 |
-| YOLOv8-X  | 1 | FP32 | 640x640 | 107 |
+| Models | BatchSize | epochs | Resolution |
+|-|-|:-:|:-:|
+| YOLOv8-n  |32| 1000 | 640x640 |
+| YOLOv8-s  | 32 | 1000 | 640x640 |
+| YOLOv8-m  | 32 | 1000 | 640x640 |
+| YOLOv8-l  | 32 | 1000 | 640x640 |
+| YOLOv8-X  | 32 | 1000 | 640x640 |
 </div>
 
 
-## 4.Usage
+## 4.Resultados
 
+<summary>YOLOv8-n</summary>
 
-1. Clone the repo.
+|precision_mean|box_loss_mean|cls_loss_mean|
+|------------|-------------|-------------|
+|78.36%|60.79|204.12|
+
+<details open>
+|      
+      
+</details>
 ```
 git clone https://github.com/Li-Hongda/TensorRT_Inference_Demo.git
 ```
