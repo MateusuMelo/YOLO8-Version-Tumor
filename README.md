@@ -107,7 +107,7 @@ Todos os treinamentos foram realizados na NVIDIA A100.
       
 |precision_mean|box_loss_mean|cls_loss_mean|
 |------------|-------------|-------------|
-|64.63%|0.85|1.11|
+|84.63%|0.85|1.11|
 
 ![alt text](https://raw.githubusercontent.com/MateusuMelo/YOLO8-Version-Tumor/dd487df16de467a0a15947e98a8798a5990bdb8f/results_img/Yolov8-S/results.png)
 
@@ -140,7 +140,7 @@ Todos os treinamentos foram realizados na NVIDIA A100.
       
 |precision_mean|box_loss_mean|cls_loss_mean|
 |------------|-------------|-------------|
-|0.94%|0.69|0.66|
+|93.87%|0.69|0.66|
 
 ![alt text](https://raw.githubusercontent.com/MateusuMelo/YOLO8-Version-Tumor/dd487df16de467a0a15947e98a8798a5990bdb8f/results_img/Yolov8-X/results.png)
 
