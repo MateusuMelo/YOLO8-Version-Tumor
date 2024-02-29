@@ -99,6 +99,7 @@ Todos os treinamentos foram realizados na NVIDIA A100.
 |91.59%|0.69|0.91|
 
 ![alt text](https://raw.githubusercontent.com/MateusuMelo/YOLO8-Version-Tumor/dd487df16de467a0a15947e98a8798a5990bdb8f/results_img/Yolov8-N/results.png)
+![alt text](https://github.com/MateusuMelo/YOLO8-Version-Tumor/blob/main/results_img/Yolov8-N/val_batch0_pred.jpg?raw=true)
 
 </div>
 
@@ -110,6 +111,7 @@ Todos os treinamentos foram realizados na NVIDIA A100.
 |84.63%|0.85|1.11|
 
 ![alt text](https://raw.githubusercontent.com/MateusuMelo/YOLO8-Version-Tumor/dd487df16de467a0a15947e98a8798a5990bdb8f/results_img/Yolov8-S/results.png)
+![alt text](https://github.com/MateusuMelo/YOLO8-Version-Tumor/blob/main/results_img/Yolov8-S/val_batch0_pred.jpg?raw=true)
 
 </div>
 
@@ -121,6 +123,7 @@ Todos os treinamentos foram realizados na NVIDIA A100.
 |91.31%|0.71|0.74|
 
 ![alt text](https://raw.githubusercontent.com/MateusuMelo/YOLO8-Version-Tumor/dd487df16de467a0a15947e98a8798a5990bdb8f/results_img/Yolov8-M/results.png)
+![alt text](https://github.com/MateusuMelo/YOLO8-Version-Tumor/blob/main/results_img/Yolov8-M/val_batch0_pred.jpg?raw=true)
 
 </div>
 
@@ -132,6 +135,7 @@ Todos os treinamentos foram realizados na NVIDIA A100.
 |91.58%|0.73|0.99|
 
 ![alt text](https://raw.githubusercontent.com/MateusuMelo/YOLO8-Version-Tumor/dd487df16de467a0a15947e98a8798a5990bdb8f/results_img/Yolov8-L/results.png)
+![alt text](https://github.com/MateusuMelo/YOLO8-Version-Tumor/blob/main/results_img/Yolov8-L/val_batch0_pred.jpg?raw=true)
 
 </div>
 
@@ -143,5 +147,6 @@ Todos os treinamentos foram realizados na NVIDIA A100.
 |93.87%|0.69|0.66|
 
 ![alt text](https://raw.githubusercontent.com/MateusuMelo/YOLO8-Version-Tumor/dd487df16de467a0a15947e98a8798a5990bdb8f/results_img/Yolov8-X/results.png)
+![alt text](https://github.com/MateusuMelo/YOLO8-Version-Tumor/blob/main/results_img/Yolov8-X/val_batch0_pred.jpg?raw=true)
 
 </div>
