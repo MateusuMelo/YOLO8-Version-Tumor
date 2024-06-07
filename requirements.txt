@@ -1,3 +1,5 @@
 supervision
 roboflow
-ultralytics==8.0.28
+ultralytics==8.2.28
+numpy
+pandas
